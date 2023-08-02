@@ -1,0 +1,7 @@
+<div *ngFor="let action of actions">
+  <h2>{{ action.title }}</h2>
+  <button (click)="create(action.id)">Create</button>
+  <button (click)="read()">Read</button>
+  <button (click)="update()">Update</button>
+  <button (click)="delete()">Delete</button>
+</div>

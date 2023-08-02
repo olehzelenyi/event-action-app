@@ -1,0 +1,13 @@
+<div *ngIf="event">
+  <h2>{{ event.title }}</h2>
+  <p>Frequency: {{ event.frequency }}</p>
+
+  <h3>Actions</h3>
+  <div *ngFor="let action of actions">
+    <p>Performed Date: {{ action.performedDate }}</p>
+    <p>Due Date: {{ action.dueDate }}</p>
+    <p *ngIf="action.attachedFile">
+      Attached File: {{ action.attachedFile.name }}
+    </p>
+  </div>
+</div>

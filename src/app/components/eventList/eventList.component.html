@@ -1,0 +1,8 @@
+<div *ngFor="let event of events">
+  <h2>{{ event.title }}</h2>
+  <a [routerLink]="['/events', event.id]">Details</a>
+  <button (click)="create(event.id)">Create</button>
+  <button (click)="read()">Read</button>
+  <button (click)="update()">Update</button>
+  <button (click)="delete()">Delete</button>
+</div>
